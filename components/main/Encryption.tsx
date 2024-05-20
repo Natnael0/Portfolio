@@ -24,14 +24,14 @@ const Encryption = () => {
 
         <div className='flex flex-col items-center justify-center translate-y-[-50px absolute z-[20] w-auto h-auto'>
             <div className='flex flex-col items-center group cursor-pointer w-auto h-auto'>
-                <img
+                <Image
                 src='/LockTop.png'
                 alt='Lock top'
                 width={50}
                 height={50}
                 className='w-[50px] translate-y-5 transition-all duration-200 group-hover:translate-y-11'
                 />
-                <img
+                <Image
                 src='/LockMain.png'
                 alt='Lock Main'
                 width={70}

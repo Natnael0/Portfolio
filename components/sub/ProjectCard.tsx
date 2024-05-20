@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 const ProjectCard = ({ src, title, description} : Props) => {
   return (
     <div className='relative overflow-hidden rounded-lg shadow-lg border-[#2A0E61'>
-        <img
+        <Image
         src={src}
         alt={title}
         width={1000}

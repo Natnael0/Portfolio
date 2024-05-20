@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { slideInFromTop, slideInFromLeft, slideInFromRight } from '@/utils/motion';
 import { SparklesIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
 
 const HeroContent = () => {
   return (
@@ -29,10 +30,7 @@ const HeroContent = () => {
         >
           <span>
           Providing
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-            {" "}
-            the best{" "}
-         </span>
+          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> the best </span>
           project experience
           </span>
         </motion.div>
@@ -41,12 +39,14 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className='text-lg text-gray-400 my-5 max-w-[600px]'
         >
-          I'm a Full Stack Software Engineer with experience in Website, Mobile, and Software, development. Check out my projects and skills.
+          I&apos;m a Full Stack Software Engineer with experience in Website,
+          Mobile, and Software, development. Check out my projects and skills.
         </motion.p>
 
         <motion.a
           variants={slideInFromLeft(1)}
           className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
+
         >
           Learn More!
         </motion.a>
@@ -56,7 +56,7 @@ const HeroContent = () => {
           variants={slideInFromRight(0.8)}
           className='w-full h-full flex justify-center items-center'
         >
-          <img
+          <Image
             src='/mainIconsdark.svg'
             alt='work icons'
             height={650}
