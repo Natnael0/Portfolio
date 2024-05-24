@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
 
             <div className='mb-[20px] text-[15px] text-center'>
-                 &copy; Natnael Milash 2024 Inc. All Rights reserved
+                 &copy; Natnael M 2024 Inc. All Rights reserved
             </div>
         </div>
     </div>
